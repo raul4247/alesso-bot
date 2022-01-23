@@ -1,4 +1,5 @@
 import play from './play.js'
+import queue from './queue.js'
 
 function processComand(client, message, command, args) {
     try {
@@ -13,7 +14,7 @@ function processComand(client, message, command, args) {
                 // skipCommand()
                 break
             case 'queue':
-                // queueCommand()
+                queue(message)
                 break
             case 'quit':
                 // quitCommand()

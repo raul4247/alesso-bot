@@ -11,4 +11,8 @@ export default {
     'SongsFoundMessage': 'Músicas encontradas: ',
     'LoadingSongMessage': 'Preparando a música 💿: ',
     'PlayingSongMessage': 'Tocando agora 🤘: ',
+    'EmptyQueueMessage': 'A fila está vazia! 🍃',
+    'LastSongOnQueueMessage': 'Não tem música depois dessa 😴',
+    'QueueStatusMessage': 'Setlist atual 📃:',
+    'AddedOnQueueMessage': 'Adicionada na fila ✅: '
 }

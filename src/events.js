@@ -15,7 +15,7 @@ function loadPlayerEvents() {
     })
     
     player.on('trackAdd', (queue, track) => {
-
+        queue.metadata.send(BotMessages.AddedOnQueueMessage + track.title)
     })
     
     player.on('botDisconnect', (queue) => {
