@@ -1,10 +1,13 @@
 import Discord from 'discord.js'
 import dotenv from 'dotenv'
-import { COMMAND_PREFIX } from './const.js'
+import StringResources  from './stringResources.js'
+import processCommand from './commands/commandProcessor.js' 
 
 dotenv.config()
 
-const client = new Discord.Client({ intents: ['GUILDS', 'GUILD_MESSAGES'] })
+const client = new Discord.Client({ 
+    intents: ['GUILDS', 'GUILD_MESSAGES'] 
+})
 
 client.once('ready', () => {
     console.log('alesso-bot is live! 🌎')
@@ -13,32 +16,24 @@ client.once('ready', () => {
 client.on('messageCreate', message => {
 
     // Ignores bot's own messages
-    if (message.author.bot) return
+    if (message.author.bot) return 
 
-    const command = message.content.split(' ')[0]
+    // Ignore messages with no guild
+    if (!message.guild) return
 
-    // Ignores non commands
-    if (!command.startsWith(COMMAND_PREFIX)) return
+    // Ignore non-command messages
+    if (!message.content.startsWith(StringResources.CommandPrefix)) return
 
-    // Ignores empty command
-    if (command === COMMAND_PREFIX) return
-
-    const commandArgs = message.content.split(' ').slice(1)
+    const args = message.content.slice(StringResources.CommandPrefix.length).trim().split(' ')
+    const command = args.shift()?.toLowerCase()
 
     console.log({
-        'User': message.author.username,
-        'Command': command,
-        'Args': commandArgs
+        'user': message.author.username,
+        'command': command,
+        'args': args
     })
 
-    switch (command.substring(COMMAND_PREFIX.length)) {
-        case 'play':
-            message.channel.send('Bora! 🎵')
-            break
-
-            default:
-            message.channel.send('Não conheço esse comando 😢')
-    }
+    processCommand(client, message, command, args)
 })
 
 client.login(process.env.BOT_TOKEN)
