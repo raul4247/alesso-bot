@@ -3,10 +3,11 @@
 ## Comandos disponíveis:
 * play
 * queue
+* pause
+* resume
 
 ## TODO:
 
-* Pause command;
 * Skip command;
 * Quit command;
 * Queue command;

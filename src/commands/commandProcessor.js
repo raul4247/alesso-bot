@@ -1,4 +1,6 @@
 import play from './play.js'
+import pause from './pause.js'
+import resume from './resume.js'
 import queue from './queue.js'
 
 function processComand(client, message, command, args) {
@@ -8,7 +10,10 @@ function processComand(client, message, command, args) {
                 play(message, args)
                 break
             case 'pause':
-                // pauseCommand()
+                pause(message)
+                break
+            case 'resume':
+                resume(message)
                 break
             case 'skip':
                 // skipCommand()
@@ -23,7 +28,7 @@ function processComand(client, message, command, args) {
                 // helpCommand()
                 break
             default:
-                // need help? use helpCommand
+            // need help? use helpCommand
         }
     } catch (e) {
         console.log(`Error: ${e}`)
