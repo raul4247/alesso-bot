@@ -16,5 +16,6 @@ export default {
     'QueueStatusMessage': 'Setlist atual 📃:',
     'AddedOnQueueMessage': 'Adicionada na fila ✅: ',
     'QueuePausedMessage': 'A fila foi pausada 🖐',
-    'QueueResumedMessage': 'A música voltou 😎'
+    'QueueResumedMessage': 'A música voltou 😎',
+    'QuittingMessage': 'Até mais 👋'
 }

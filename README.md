@@ -5,11 +5,11 @@
 * queue
 * pause
 * resume
+* quit
+
 
 ## TODO:
 
 * Skip command;
-* Quit command;
-* Queue command;
 * SaveTrack command;
 * Clear command;

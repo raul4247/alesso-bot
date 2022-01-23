@@ -2,6 +2,7 @@ import play from './play.js'
 import pause from './pause.js'
 import resume from './resume.js'
 import queue from './queue.js'
+import quit from './quit.js'
 
 function processComand(client, message, command, args) {
     try {
@@ -22,7 +23,7 @@ function processComand(client, message, command, args) {
                 queue(message)
                 break
             case 'quit':
-                // quitCommand()
+                quit(message)
                 break
             case 'help':
                 // helpCommand()
