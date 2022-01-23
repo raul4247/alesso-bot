@@ -7,3 +7,4 @@
 * Skip command;
 * Quit command;
 * Queue command;
+* SaveTrack command;
