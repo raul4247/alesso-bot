@@ -17,5 +17,6 @@ export default {
     'AddedOnQueueMessage': 'Adicionada na fila ✅: ',
     'QueuePausedMessage': 'A fila foi pausada 🖐',
     'QueueResumedMessage': 'A música voltou 😎',
-    'QuittingMessage': 'Até mais 👋'
+    'QuittingMessage': 'Até mais 👋',
+    'QueueClearedMessage': 'A fila está limpa 🚽'
 }
