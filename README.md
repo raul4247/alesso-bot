@@ -1,10 +1,14 @@
 # alesso-bot
 
+## Comandos disponíveis:
+* play
+* queue
+
 ## TODO:
 
-* Play command;
 * Pause command;
 * Skip command;
 * Quit command;
 * Queue command;
 * SaveTrack command;
+* Clear command;
