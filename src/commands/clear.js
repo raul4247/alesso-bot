@@ -7,7 +7,7 @@ async function clear(message) {
     if (!queue || !queue.playing) {
         message.channel.send(BotMessages.EmptyQueueMessage)
         return
-    } 
+    }
 
     if (!queue.tracks[0]) {
         message.channel.send(BotMessages.EmptyQueueMessage)

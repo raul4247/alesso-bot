@@ -18,5 +18,6 @@ export default {
     'QueuePausedMessage': 'A fila foi pausada 🖐',
     'QueueResumedMessage': 'A música voltou 😎',
     'QuittingMessage': 'Até mais 👋',
-    'QueueClearedMessage': 'A fila está limpa 🚽'
+    'QueueClearedMessage': 'A fila está limpa 🚽',
+    'SkippingSongMessage': 'Pulando a música 🦘: '
 }

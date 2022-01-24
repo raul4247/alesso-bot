@@ -5,6 +5,7 @@
 * queue
 * pause
 * resume
+* clear
 * quit
 
 
@@ -12,4 +13,4 @@
 
 * Skip command;
 * SaveTrack command;
-* Clear command;
+* Help command;

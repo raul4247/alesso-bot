@@ -3,6 +3,7 @@ import pause from './pause.js'
 import resume from './resume.js'
 import queue from './queue.js'
 import clear from './clear.js'
+import skip from './skip.js'
 import quit from './quit.js'
 
 function processComand(client, message, command, args) {
@@ -18,7 +19,7 @@ function processComand(client, message, command, args) {
                 resume(message)
                 break
             case 'skip':
-                // skipCommand()
+                skip(message)
                 break
             case 'clear':
                 clear(message)
