@@ -8,12 +8,13 @@
 * clear
 * quit
 * skip
+* remove
 * help
 
 ## TODO:
 
-* Remove command;
 * Filter command;
+* Slowed command;
 
 * Usar MessageEmbed:
  https://discordjs.guide/popular-topics/embeds.html#embed-preview

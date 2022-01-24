@@ -20,13 +20,18 @@ export default {
     'QuittingMessage': 'Até mais 👋',
     'QueueClearedMessage': 'A fila está limpa 🚽',
     'SkippingSongMessage': 'Pulando a música 🦘: ',
-    'SavedSongMessage': 'Salvando a música: 💾',
+    'SavedSongMessage': 'Salvando a música 💾: ',
+    'RemovedSongMessage': 'Música removida 🚮: ',
+    'DisconnectedBotMessage': 'Me derrubaram aqui 😤',
+    'EmptyChannelMessage': 'Não tem ninguém no canal de voz, tô indo embora 👋',
+    'QueueEndedMessage': 'O show acabou (por enquanto 🤭)',
     'HelpMessage':
         `${configs.commandPrefix}play [Nome da Música ou Link do YouTube/Spotify/SoundCloud] - Coloca música na fila\n` +
         `${configs.commandPrefix}pause - Pausa o player\n` +
         `${configs.commandPrefix}resume - Retorna o player\n` +
         `${configs.commandPrefix}skip - Pula a música atual\n` +
         `${configs.commandPrefix}queue - Ver a fila atual\n` +
+        `${configs.commandPrefix}remove [Posição na fila] - Remove a música selecionada da fila\n` +
         `${configs.commandPrefix}clear - Limpa as músicas da fila\n` +
         `${configs.commandPrefix}quit - Termina o player\n` +
         `${configs.commandPrefix}help - Você tá vendo agora 😅`

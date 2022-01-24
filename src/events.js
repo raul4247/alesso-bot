@@ -19,12 +19,15 @@ function loadPlayerEvents() {
     })
     
     player.on('botDisconnect', (queue) => {
+        queue.metadata.send(BotMessages.DisconnectedBotMessage)
     })
     
     player.on('channelEmpty', (queue) => {
+        queue.metadata.send(EmptyChannelMessage)
     })
     
     player.on('queueEnd', (queue) => {
+        queue.metadata.send(BotMessages.QueueEndedMessage)
     })
 }
 
