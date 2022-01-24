@@ -35,7 +35,7 @@ function loadBot() {
             'args': args
         })
 
-        processCommand(client, message, command, args)
+        processCommand(message, command, args)
     })
 }
 

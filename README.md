@@ -8,6 +8,8 @@
 * clear
 * quit
 * skip
+* filter
+* slowed
 * remove
 * help
 

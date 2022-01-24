@@ -5,11 +5,13 @@ import queue from './queue.js'
 import clear from './clear.js'
 import skip from './skip.js'
 import save from './save.js'
+import filter from './filter.js'
+import slowed from './slowed.js'
 import remove from './remove.js'
 import quit from './quit.js'
 import BotMessages from '../BotMessages.js'
 
-function processComand(client, message, command, args) {
+function processComand(message, command, args) {
     try {
         switch (command) {
             case 'play':
@@ -32,6 +34,12 @@ function processComand(client, message, command, args) {
                 break
             case 'save':
                 save(message)
+                break
+            case 'filter':
+                filter(message, args)
+                break       
+            case 'slowed':
+                slowed(message)
                 break
             case 'remove':
                 remove(message, args)
