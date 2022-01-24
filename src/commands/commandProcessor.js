@@ -6,6 +6,7 @@ import clear from './clear.js'
 import skip from './skip.js'
 import save from './save.js'
 import quit from './quit.js'
+import BotMessages from '../BotMessages.js'
 
 function processComand(client, message, command, args) {
     try {
@@ -35,10 +36,10 @@ function processComand(client, message, command, args) {
                 quit(message)
                 break
             case 'help':
-                // helpCommand()
+                message.channel.send(BotMessages.HelpMessage)
                 break
             default:
-            // need help? use helpCommand
+                message.channel.send(BotMessages.UseHelpCommandMessage)
         }
     } catch (e) {
         console.log(`Error: ${e}`)
