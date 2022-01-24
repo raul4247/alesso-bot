@@ -4,6 +4,7 @@ import resume from './resume.js'
 import queue from './queue.js'
 import clear from './clear.js'
 import skip from './skip.js'
+import save from './save.js'
 import quit from './quit.js'
 
 function processComand(client, message, command, args) {
@@ -26,6 +27,9 @@ function processComand(client, message, command, args) {
                 break
             case 'queue':
                 queue(message)
+                break
+            case 'save':
+                save(message)
                 break
             case 'quit':
                 quit(message)

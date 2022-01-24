@@ -7,10 +7,11 @@
 * resume
 * clear
 * quit
-
+* skip
 
 ## TODO:
 
-* Skip command;
-* SaveTrack command;
 * Help command;
+
+* Usar MessageEmbed:
+ https://discordjs.guide/popular-topics/embeds.html#embed-preview
