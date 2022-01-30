@@ -17,5 +17,8 @@
     "esm": "^3.2.25",
     "ffmpeg-static": "^4.4.1",
     "opusscript": "^0.0.8"
+  },
+  "engines": {
+    "node": "16.x"
   }
 }
