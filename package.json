@@ -4,6 +4,9 @@
   "main": "src/index.js",
   "author": "raulfm",
   "type": "module",
+  "scripts": {
+    "start": "node ./src/index.js"
+  },
   "dependencies": {
     "@discord-player/downloader": "^3.0.1",
     "@discordjs/rest": "^0.2.0-canary.0",
