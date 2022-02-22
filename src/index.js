@@ -35,4 +35,4 @@ http.createServer((req, res) => {
     })
     res.write('alesso-bot is running ☜(ﾟヮﾟ☜)')
     res.end()
-}).listen(80)
+}).listen(process.env.PORT || 4000)
