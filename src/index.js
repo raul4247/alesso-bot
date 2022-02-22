@@ -35,4 +35,4 @@ http.createServer((req, res) => {
     })
     res.write('alesso-bot is running ☜(ﾟヮﾟ☜)')
     res.end()
-}).listen(4000)
+}).listen(80)
