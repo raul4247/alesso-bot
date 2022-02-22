@@ -16,7 +16,8 @@
     "dotenv": "^14.2.0",
     "esm": "^3.2.25",
     "ffmpeg-static": "^4.4.1",
-    "opusscript": "^0.0.8"
+    "opusscript": "^0.0.8",
+    "ytdl-core": "^4.10.1"
   },
   "engines": {
     "node": "16.x"
