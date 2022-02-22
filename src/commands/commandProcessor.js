@@ -47,11 +47,6 @@ function processComand(message, command, args) {
             case 'quit':
                 quit(message)
                 break
-
-            case 'chuta':
-                let rand = args[Math.floor(Math.random() * args.length)]
-                message.channel.send(rand + ' rodou! 🤝')
-                break
             case 'help':
                 message.channel.send(BotMessages.HelpMessage)
                 break
